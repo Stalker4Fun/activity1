@@ -4,7 +4,7 @@ A Vite + React application for the existing Spring Boot user API. It provides re
 
 ## Run locally
 
-1. Start the submitted Spring Boot backend on `http://localhost:8080`.
+1. Start the Spring Boot backend from the sibling `../backend` directory on `http://localhost:8080`.
 2. In this `frontend` directory, run `npm install` once.
 3. Run `npm run dev` and open the URL Vite prints (normally `http://localhost:5173`).
 
