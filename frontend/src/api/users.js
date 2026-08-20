@@ -7,8 +7,13 @@ async function send(path, payload) {
     body: JSON.stringify(payload),
   });
   const text = await response.text();
-  if (!response.ok) throw new Error(text || `Request failed (${response.status})`);
-  return text;
+  const data = response.headers.get('content-type')?.includes('application/json') && text
+    ? JSON.parse(text)
+    : text;
+  if (!response.ok) {
+    throw new Error(typeof data === 'string' ? data : data.message || `Request failed (${response.status})`);
+  }
+  return data;
 }
 
 export function registerUser({ username, password }) {

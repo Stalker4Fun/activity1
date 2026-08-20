@@ -42,8 +42,8 @@ The current backend returns the saved entity, including its password field. The 
 | Purpose | Verify a username/password combination. |
 | Request headers | `Content-Type: application/json`; `Accept: application/json, text/plain` |
 | Request body | JSON object: `username` (`string`), `password` (`string`) |
-| Success | `200 OK`, plain text: `Login successful` |
-| Error | `401 Unauthorized`, plain text: `Invalid username or password` |
+| Success | `200 OK`, JSON object containing `message` (`string`) |
+| Error | `401 Unauthorized`, JSON object containing `message` (`string`) |
 
 Request:
 
@@ -56,14 +56,18 @@ Request:
 
 Successful response (`200 OK`):
 
-```text
-Login successful
+```json
+{
+  "message": "Login successful"
+}
 ```
 
 Error response (`401 Unauthorized`):
 
-```text
-Invalid username or password
+```json
+{
+  "message": "Invalid username or password"
+}
 ```
 
 ## Client validation

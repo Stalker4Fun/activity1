@@ -3,6 +3,8 @@ package edu.cit.valendez.activity1;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Map;
+
 @RestController
 @RequestMapping("/api")
 public class UserController {
@@ -34,9 +36,10 @@ public class UserController {
                 .filter(existingUser ->
                         existingUser.getPassword().equals(user.getPassword()))
                 .map(existingUser ->
-                        ResponseEntity.ok("Login successful"))
+                        ResponseEntity.ok(Map.of("message", "Login successful")))
                 .orElseGet(() ->
-                        ResponseEntity.status(401).body("Invalid username or password"));
+                        ResponseEntity.status(401)
+                                .body(Map.of("message", "Invalid username or password")));
     }
 
     // GET /api/user/{i}
