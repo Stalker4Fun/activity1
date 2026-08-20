@@ -13,6 +13,10 @@ input { width: 100%; padding: 11px 12px; border: 1px solid #b9c4d5; border-radiu
 input:focus { outline: 3px solid #3a63d833; border-color: #3a63d8; }
 button { margin-top: 16px; padding: 12px; color: #fff; background: #3157ca; border: 0; border-radius: 8px; cursor: pointer; font-weight: 700; }
 button:hover { background: #2748aa; }
+button:disabled { cursor: wait; opacity: .7; }
 .field-error { margin: 0; color: #b42318; font-size: .875rem; }
 .form-footer { margin: 22px 0 0; color: #5c667a; text-align: center; }
 a { color: #3157ca; font-weight: 700; }
+.notice { margin: 0 0 18px; padding: 11px 12px; border-radius: 8px; }
+.notice.success { color: #067647; background: #ecfdf3; }
+.notice.error { color: #b42318; background: #fef3f2; }
