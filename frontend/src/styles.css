@@ -14,3 +14,5 @@ input:focus { outline: 3px solid #3a63d833; border-color: #3a63d8; }
 button { margin-top: 16px; padding: 12px; color: #fff; background: #3157ca; border: 0; border-radius: 8px; cursor: pointer; font-weight: 700; }
 button:hover { background: #2748aa; }
 .field-error { margin: 0; color: #b42318; font-size: .875rem; }
+.form-footer { margin: 22px 0 0; color: #5c667a; text-align: center; }
+a { color: #3157ca; font-weight: 700; }
