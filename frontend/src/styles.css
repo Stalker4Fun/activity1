@@ -1,0 +1,16 @@
+:root { font-family: Inter, system-ui, sans-serif; color: #172033; background: #f4f7fb; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+button, input { font: inherit; }
+.auth-layout { display: grid; min-height: 100vh; place-items: center; padding: 24px; }
+.auth-card { width: min(100%, 440px); padding: 36px; background: #fff; border: 1px solid #dce3ee; border-radius: 16px; box-shadow: 0 12px 32px #17203312; }
+.eyebrow { margin: 0 0 8px; color: #3a63d8; font-size: .75rem; font-weight: 800; letter-spacing: .12em; }
+h1 { margin: 0; font-size: 1.8rem; }
+.subtitle { color: #5c667a; margin: 10px 0 28px; }
+form { display: grid; gap: 8px; }
+label { margin-top: 8px; font-weight: 650; }
+input { width: 100%; padding: 11px 12px; border: 1px solid #b9c4d5; border-radius: 8px; }
+input:focus { outline: 3px solid #3a63d833; border-color: #3a63d8; }
+button { margin-top: 16px; padding: 12px; color: #fff; background: #3157ca; border: 0; border-radius: 8px; cursor: pointer; font-weight: 700; }
+button:hover { background: #2748aa; }
+.field-error { margin: 0; color: #b42318; font-size: .875rem; }
