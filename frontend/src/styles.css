@@ -20,3 +20,12 @@ a { color: #3157ca; font-weight: 700; }
 .notice { margin: 0 0 18px; padding: 11px 12px; border-radius: 8px; }
 .notice.success { color: #067647; background: #ecfdf3; }
 .notice.error { color: #b42318; background: #fef3f2; }
+.dashboard-layout { display: grid; min-height: 100vh; place-items: center; padding: 24px; }
+.dashboard-card { width: min(100%, 680px); padding: 36px; background: #fff; border: 1px solid #dce3ee; border-radius: 16px; box-shadow: 0 12px 32px #17203312; }
+.dashboard-heading { display: flex; align-items: start; justify-content: space-between; gap: 24px; }
+.secondary-button { width: auto; margin: 0; color: #3157ca; background: #eef2ff; }
+.secondary-button:hover { background: #dfe6ff; }
+.welcome-message { margin: 28px 0; color: #344054; font-size: 1.1rem; }
+.dashboard-panel { padding: 20px; background: #f6f8fc; border-radius: 10px; }
+.dashboard-panel h2 { margin: 0; font-size: 1rem; }
+.dashboard-panel p { margin: 8px 0 0; color: #5c667a; }
